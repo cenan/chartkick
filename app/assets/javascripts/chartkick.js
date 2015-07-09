@@ -557,7 +557,7 @@
           var options = jsOptions(chart.data, chart.options);
           var data = createDataTable(chart.data, chart.options.discrete ? "string" : "datetime");
           var formatter = new google.visualization.DateFormat({
-            pattern: "%m/%d/%Y"
+            pattern: "%d/%M/%y"
           });
           formatter.format(data, 0);
           chart.chart = new google.visualization.LineChart(chart.element);
